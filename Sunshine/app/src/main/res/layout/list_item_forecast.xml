@@ -4,10 +4,12 @@
     android:layout_height="match_parent"
     android:weightSum="1">
 
-    <EditText
+    <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/list_item_forecast_textview"
         android:text="Today - Sunny - 88/63"
-        android:layout_weight="0.14" />
+        android:layout_weight="0.14"
+        android:width="20dp"
+        android:gravity="center|center_vertical" />
 </LinearLayout>
