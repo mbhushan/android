@@ -1,0 +1,7 @@
+sample open weather map API call
+
+bangalore id: 1277333
+http://api.openweathermap.org/data/2.5/forecast?id=1277333&mode=json&units=metric&cnt=7
+
+Daily Forecast for 7 days:
+http://api.openweathermap.org/data/2.5/forecast/daily?id=1277333&mode=json&units=metric&cnt=7
