@@ -66,13 +66,14 @@ public class DetailActivity extends ActionBarActivity {
             View rootView = inflater.inflate(R.layout.fragment_detail, container, false);
 
             // The detail Activity called via intent.  Inspect the intent for forecast data.
+            // right now we are just showing the single detail
             Intent intent = getActivity().getIntent();
             if (intent != null && intent.hasExtra(Intent.EXTRA_TEXT)) {
                 String forecastStr = intent.getStringExtra(Intent.EXTRA_TEXT);
                 ((TextView) rootView.findViewById(R.id.detail_text))
                         .setText(forecastStr);
             }
-            
+
             return rootView;
         }
     }
