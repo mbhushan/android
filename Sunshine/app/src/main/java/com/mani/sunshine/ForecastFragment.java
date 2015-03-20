@@ -58,7 +58,6 @@ public class ForecastFragment extends Fragment {
                 getString(R.string.pref_location_default));
         weatherTask.execute(location);
         Log.e(LOG_TAG, "LOCATION IS: " + location);
-       // weatherTask.execute("1277333");
     }
 
     @Override
@@ -90,15 +89,6 @@ public class ForecastFragment extends Fragment {
                              Bundle savedInstanceState) {
 
         View rootView = inflater.inflate(R.layout.fragment_main, container, false);
-
-        //List<String> weekForecast = new ArrayList<String>();
-//        weekForecast.add("Today - Sunny - 88/63");
-//        weekForecast.add("Tomorrow - Foggy - 70/46");
-//        weekForecast.add("Weds - Cloudy - 72/63");
-//        weekForecast.add("Thurs - Rainy - 64/51");
-//        weekForecast.add("Fri - Foggy - 70/46");
-//        weekForecast.add("Sat - Sunny - 76/68");
-//        weekForecast.add("Sun - Sunny - 80/68");
 
         forecastAdapter = new ArrayAdapter<String>(
                 getActivity(),
