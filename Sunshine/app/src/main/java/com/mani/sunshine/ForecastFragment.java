@@ -161,7 +161,6 @@ public class ForecastFragment extends Fragment {
                 String description;
                 String highAndLow;
 
-                //get the JSON representing the day.
                 JSONObject dayForecast = weatherArray.getJSONObject(i);
 
                 // The date/time is returned as a long.  We need to convert that
@@ -170,7 +169,6 @@ public class ForecastFragment extends Fragment {
                 long dateTime = dayForecast.getLong(OWM_DATETIME);
                 day = getReadableDateString(dateTime);
 
-                // description is in a child array called "weather", which is 1 element long.
                 JSONObject weatherObject = dayForecast.getJSONArray(OWM_WEATHER).getJSONObject(0);
                 description = weatherObject.getString(OWM_DESCRIPTION);
 
@@ -279,11 +277,10 @@ public class ForecastFragment extends Fragment {
                 }
 
                 if (buffer.length() == 0) {
-                    // Stream was empty.  No point in parsing.
                     return null;
                 }
                 forecastJsonStr = buffer.toString();
-                Log.v(LOG_TAG, "Forecast JSON string" + forecastJsonStr);
+                //Log.v(LOG_TAG, "Forecast JSON string" + forecastJsonStr);
             } catch (IOException e) {
                 Log.e(LOG_TAG, "Error ", e);
                 // If the code didn't successfully get the weather data, there's no point in attemping
