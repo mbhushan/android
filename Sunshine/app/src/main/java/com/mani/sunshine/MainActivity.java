@@ -17,7 +17,7 @@ public class MainActivity extends ActionBarActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-        Log.v(LOG_TAG, "BHUSHAN On Create!");
+        Log.v(LOG_TAG, "BHUSHAN in Create!");
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         if (savedInstanceState == null) {
@@ -43,7 +43,7 @@ public class MainActivity extends ActionBarActivity {
 
     @Override
     protected void onPause() {
-        Log.v(LOG_TAG, " BHUSHAN in onPause");
+        Log.v(LOG_TAG, "BHUSHAN in onPause");
         super.onPause();
         // Another activity is taking focus (this activity is about to be "paused").
     }
