@@ -13,6 +13,7 @@ public abstract class PollingCheck {
     private long mTimeout = 3000;
 
     public PollingCheck() {
+	//default constructor
     }
 
     public PollingCheck(long timeout) {
