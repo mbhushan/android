@@ -9,14 +9,14 @@ public class TestDb extends AndroidTestCase {
 
     public static final String LOG_TAG = TestDb.class.getSimpleName();
 
-    // Since we want each test to start with a clean slate
+    // Since we want each test to start with a clean slate - deleting the database is the way to go
     void deleteTheDatabase() {
         mContext.deleteDatabase(WeatherDbHelper.DATABASE_NAME);
     }
 
     /*
         This function gets called before each test is executed to delete the database.  This makes
-        sure that we always have a clean test.
+        sure that we always have a clean test
      */
     public void setUp() {
         deleteTheDatabase();
