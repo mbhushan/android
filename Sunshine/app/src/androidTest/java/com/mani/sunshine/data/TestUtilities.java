@@ -91,7 +91,6 @@ public class TestUtilities extends AndroidTestCase {
 //        long locationRowId;
 //        locationRowId = db.insert(WeatherContract.LocationEntry.TABLE_NAME, null, testValues);
 //
-//        // Verify we got a row back.
 //        assertTrue("Error: Failure to insert North Pole Location Values", locationRowId != -1);
 //
 //        return locationRowId;
