@@ -5,8 +5,12 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity">
 
-    <TextView android:text="@string/hello_world" android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+    <TextView android:text="@string/happy_bday"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:textStyle="bold"
+        android:background="#009688"
+        android:id="@+id/textView" />
 
 </RelativeLayout>
 <!-- From: file:/Users/manib/Documents/development/android/HappyBirthday/app/src/main/res/layout/activity_main.xml -->

@@ -171,6 +171,7 @@
     <eat-comment/>
     <string name="action_settings">Settings</string>
     <string name="app_name">Happy Birthday</string>
+    <string name="happy_bday">Happy Birthday Shreyansh!</string>
     <string name="hello_world">Hello world!</string>
     <!-- From: file:/Users/manib/Documents/development/android/HappyBirthday/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.0.0/res/values/values.xml -->
     <eat-comment/>

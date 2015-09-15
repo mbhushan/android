@@ -357,7 +357,7 @@ int id action_menu_presenter 0x7f090003
 int id action_mode_bar 0x7f09002e
 int id action_mode_bar_stub 0x7f09002d
 int id action_mode_close_button 0x7f090020
-int id action_settings 0x7f09003f
+int id action_settings 0x7f090040
 int id activity_chooser_view_content 0x7f090021
 int id always 0x7f090016
 int id beginning 0x7f090013
@@ -403,6 +403,7 @@ int id showTitle 0x7f090011
 int id split_action_bar 0x7f090007
 int id submit_area 0x7f09003c
 int id tabMode 0x7f09000b
+int id textView 0x7f09003f
 int id title 0x7f090027
 int id up 0x7f090008
 int id useLogo 0x7f090012
@@ -455,7 +456,8 @@ int string abc_shareactionprovider_share_with_application 0x7f0b000e
 int string abc_toolbar_collapse_description 0x7f0b000f
 int string action_settings 0x7f0b0010
 int string app_name 0x7f0b0011
-int string hello_world 0x7f0b0012
+int string happy_bday 0x7f0b0012
+int string hello_world 0x7f0b0013
 int style Animation_AppCompat_DropDownUp 0x7f0c0000
 int style AppTheme 0x7f0c0001
 int style Base_Animation_AppCompat_DropDownUp 0x7f0c0002

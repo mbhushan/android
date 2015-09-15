@@ -2,5 +2,6 @@
     <string name="app_name">Happy Birthday</string>
 
     <string name="hello_world">Hello world!</string>
+    <string name="happy_bday">Happy Birthday Shreyansh!</string>
     <string name="action_settings">Settings</string>
 </resources>

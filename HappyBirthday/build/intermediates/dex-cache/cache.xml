@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="/Users/manib/Library/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/22.0.0/support-annotations-22.0.0.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="685d0b2c590447e85284ed84712cb363ba04eff8">
+        <dex dex="/Users/manib/Documents/development/android/HappyBirthday/app/build/intermediates/pre-dexed/debug/support-annotations-22.0.0-ac618a178f067160e07b03c4b241ed4756165638.jar" />
+    </item>
+    <item
+        jar="/Users/manib/Documents/development/android/HappyBirthday/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.0.0/classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="d84409890828e07d344a3b9b1da545dba9897b51">
+        <dex dex="/Users/manib/Documents/development/android/HappyBirthday/app/build/intermediates/pre-dexed/debug/classes-177e8b3f5b92c9d150700196c98ee5b47b7d08d9.jar" />
+    </item>
+    <item
+        jar="/Users/manib/Documents/development/android/HappyBirthday/app/build/intermediates/exploded-aar/com.android.support/support-v4/22.0.0/libs/internal_impl-22.0.0.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="b5b92f469d515a13d778900f6d50c03d12f35504">
+        <dex dex="/Users/manib/Documents/development/android/HappyBirthday/app/build/intermediates/pre-dexed/debug/internal_impl-22.0.0-2ae07c61bb4c2f49cd17014fca17653e79d80dcc.jar" />
+    </item>
+    <item
+        jar="/Users/manib/Documents/development/android/HappyBirthday/app/build/intermediates/exploded-aar/com.android.support/support-v4/22.0.0/classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="4e86306289ace4aa0cfec44a05ed2b410d36989d">
+        <dex dex="/Users/manib/Documents/development/android/HappyBirthday/app/build/intermediates/pre-dexed/debug/classes-ebb007b29a91f3af1a4428bb0177c80f4bf988ea.jar" />
+    </item>
+
+</items>
