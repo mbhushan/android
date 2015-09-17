@@ -8,6 +8,7 @@
         android:layout_height="wrap_content"
         android:textSize="36sp"
         android:fontFamily="sans-serif-light"
+        android:textColor="@android:color/white"
         android:id="@+id/wish" />
 
     <ImageView
@@ -26,6 +27,7 @@
         android:id="@+id/from"
         android:layout_alignParentRight="true"
         android:layout_alignParentBottom="true"
+        android:textColor="@android:color/white"
         />
 
 </RelativeLayout>
