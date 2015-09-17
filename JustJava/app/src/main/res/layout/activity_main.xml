@@ -12,7 +12,9 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="QUANTITY"
+        android:text="Quantity"
+        android:textAllCaps="true"
+        android:layout_marginBottom="16dp"
         />
 
     <TextView
@@ -21,7 +23,6 @@
         android:text="0"
         android:id="@+id/quantity_text_view"
         android:textSize="16sp"
-        android:padding="16dp"
         android:textColor="#000000"
         />
 
@@ -30,6 +31,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Order"
+        android:layout_marginTop="16dp"
         />
 
 </LinearLayout>
