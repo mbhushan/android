@@ -7,6 +7,10 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.TextView;
 
+import org.w3c.dom.Text;
+
+import java.text.NumberFormat;
+
 
 public class MainActivity extends ActionBarActivity {
 
@@ -21,7 +25,11 @@ public class MainActivity extends ActionBarActivity {
      * @param view
      */
     public void submitOrder(View view) {
-        display(1);
+        int numOfCoffee = 2;
+        double coffeePrice = 20.0;
+        display(numOfCoffee);
+        double totalPrice = numOfCoffee * coffeePrice;
+        displayPrice(totalPrice);
     }
 
     /**
@@ -32,6 +40,15 @@ public class MainActivity extends ActionBarActivity {
     private void display(int number) {
         TextView quantityTV = (TextView) findViewById(R.id.quantity_text_view);
         quantityTV.setText("" + number);
+    }
+
+    /**
+     * This method displays the given price on the screen
+     * @return
+     */
+    private void displayPrice(double number) {
+        TextView priceTV = (TextView) findViewById(R.id.total_price_text_view);
+        priceTV.setText(NumberFormat.getCurrencyInstance().format(number));
     }
 
     @Override
