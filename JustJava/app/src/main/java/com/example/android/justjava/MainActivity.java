@@ -4,6 +4,8 @@ import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.TextView;
 
 
 public class MainActivity extends ActionBarActivity {
@@ -14,6 +16,23 @@ public class MainActivity extends ActionBarActivity {
         setContentView(R.layout.activity_main);
     }
 
+    /**
+     * This method is called when the order button is clicked.
+     * @param view
+     */
+    public void submitOrder(View view) {
+        display(1);
+    }
+
+    /**
+     * Displays given quantity on screen
+     * @param number
+     * @return void
+     */
+    private void display(int number) {
+        TextView quantityTV = (TextView) findViewById(R.id.quantity_text_view);
+        quantityTV.setText("" + number);
+    }
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
