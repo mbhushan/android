@@ -4,9 +4,36 @@ import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.TextView;
+
+import org.w3c.dom.Text;
 
 
 public class MainActivity extends ActionBarActivity {
+    private int aScore = 0;
+    private final int THREE = 3;
+    private final int TWO = 2;
+    private final int ONE = 1;
+
+    private void displayATeamScore(int score) {
+        aScore += score;
+        TextView aScoreTV = (TextView) findViewById(R.id.a_teamscore);
+        aScoreTV.setText(String.valueOf(aScore));
+
+    }
+
+    public void incrementByThree(View view) {
+        displayATeamScore(THREE);
+    }
+
+    public void incrementByTwo(View view) {
+        displayATeamScore(TWO);
+    }
+
+    public void incrementByOne(View view) {
+        displayATeamScore(ONE);
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
