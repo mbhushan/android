@@ -14,10 +14,24 @@ import java.text.NumberFormat;
 
 public class MainActivity extends ActionBarActivity {
 
+    private static int QTY = 0;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+    }
+
+    public void increment(View view) {
+        QTY += 1;
+        displayQuantity();
+    }
+
+    public void decrement(View view) {
+        if (QTY > 0) {
+            QTY -= 1;
+        }
+        displayQuantity();
     }
 
     /**
@@ -25,28 +39,26 @@ public class MainActivity extends ActionBarActivity {
      * @param view
      */
     public void submitOrder(View view) {
-        int numOfCoffee = 2;
-        double coffeePrice = 20.0;
-        display(numOfCoffee);
-        double totalPrice = numOfCoffee * coffeePrice;
-        displayPrice(totalPrice);
+        double price = 20.0;
+        displayQuantity();
+        double totalPrice = QTY * price;
+        displayTotalPrice(totalPrice);
     }
 
     /**
      * Displays given quantity on screen
-     * @param number
      * @return void
      */
-    private void display(int number) {
+    private void displayQuantity() {
         TextView quantityTV = (TextView) findViewById(R.id.quantity_text_view);
-        quantityTV.setText("" + number);
+        quantityTV.setText("" + QTY);
     }
 
     /**
      * This method displays the given price on the screen
      * @return
      */
-    private void displayPrice(double number) {
+    private void displayTotalPrice(double number) {
         TextView priceTV = (TextView) findViewById(R.id.total_price_text_view);
         priceTV.setText(NumberFormat.getCurrencyInstance().format(number));
     }
