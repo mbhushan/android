@@ -15,6 +15,7 @@ import java.text.NumberFormat;
 public class MainActivity extends ActionBarActivity {
 
     private static int QTY = 0;
+    private static String TOTAL = "Total";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -60,7 +61,7 @@ public class MainActivity extends ActionBarActivity {
      */
     private void displayTotalPrice(double number) {
         TextView priceTV = (TextView) findViewById(R.id.total_price_text_view);
-        priceTV.setText(NumberFormat.getCurrencyInstance().format(number));
+        priceTV.setText(TOTAL + " = " + NumberFormat.getCurrencyInstance().format(number));
     }
 
     @Override
