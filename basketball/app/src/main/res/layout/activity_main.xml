@@ -1,0 +1,45 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Team A"
+        android:gravity="center_horizontal"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:textColor="@android:color/black"
+        android:textSize="30sp"
+        android:paddingTop="16dp"
+        android:gravity="center_horizontal"/>
+
+    <Button
+        android:id="@+id/a_btn_3points"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="+3 POINTS"
+        android:layout_marginTop="8dp"/>
+
+    <Button
+        android:id="@+id/a_btn_2points"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="+2 POINTS"
+        android:layout_marginTop="16dp"/>
+
+    <Button
+        android:id="@+id/a_btn_freethrow"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="FREE THROW"
+        android:layout_marginTop="16dp"/>
+
+
+</LinearLayout>
