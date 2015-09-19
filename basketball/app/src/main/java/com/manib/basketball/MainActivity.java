@@ -17,22 +17,24 @@ public class MainActivity extends ActionBarActivity {
     private final int ONE = 1;
 
     private void displayATeamScore(int score) {
-        aScore += score;
         TextView aScoreTV = (TextView) findViewById(R.id.a_teamscore);
-        aScoreTV.setText(String.valueOf(aScore));
+        aScoreTV.setText(String.valueOf(score));
 
     }
 
     public void incrementByThree(View view) {
-        displayATeamScore(THREE);
+        aScore += THREE;
+        displayATeamScore(aScore);
     }
 
     public void incrementByTwo(View view) {
-        displayATeamScore(TWO);
+        aScore += TWO;
+        displayATeamScore(aScore);
     }
 
     public void incrementByOne(View view) {
-        displayATeamScore(ONE);
+        aScore += ONE;
+        displayATeamScore(aScore);
     }
 
     @Override
