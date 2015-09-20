@@ -16,6 +16,8 @@ public class MainActivity extends ActionBarActivity {
 
     private static int QTY = 0;
     private static String TOTAL = "Total";
+    private static double PRICE_PER_COFFEE = 20.0;
+    private String name = "Mani Bhushan";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -35,15 +37,30 @@ public class MainActivity extends ActionBarActivity {
         displayQuantity();
     }
 
+    private double calculatePrice() {
+        double price = QTY * PRICE_PER_COFFEE;
+        return price;
+    }
+    private String createOrderSummary() {
+        StringBuffer sb = new StringBuffer();
+        sb.append("Name: " + name);
+        sb.append("\nQuantity: " + QTY);
+        double totalPrice = calculatePrice();
+
+        sb.append("\nTotal: " + NumberFormat.getCurrencyInstance().format(totalPrice));
+        sb.append("\nThank You!");
+
+        return sb.toString();
+    }
+
+
     /**
      * This method is called when the order button is clicked.
      * @param view
      */
     public void submitOrder(View view) {
-        double price = 20.0;
-        displayQuantity();
-        double totalPrice = QTY * price;
-        displayTotalPrice(totalPrice);
+        String orderSummary = createOrderSummary();
+        displayOrderSummary(orderSummary);
     }
 
     /**
@@ -59,9 +76,9 @@ public class MainActivity extends ActionBarActivity {
      * This method displays the given price on the screen
      * @return
      */
-    private void displayTotalPrice(double number) {
+    private void displayOrderSummary(String orderSummary) {
         TextView priceTV = (TextView) findViewById(R.id.total_price_text_view);
-        priceTV.setText(TOTAL + " = " + NumberFormat.getCurrencyInstance().format(number));
+        priceTV.setText(orderSummary);
     }
 
     @Override
