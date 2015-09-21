@@ -77,7 +77,7 @@ public class MainActivity extends ActionBarActivity {
      * @return
      */
     private void displayOrderSummary(String orderSummary) {
-        TextView priceTV = (TextView) findViewById(R.id.total_price_text_view);
+        TextView priceTV = (TextView) findViewById(R.id.order_summary_text_view);
         priceTV.setText(orderSummary);
     }
 
