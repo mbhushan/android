@@ -1327,10 +1327,11 @@ containing a value of this type.
         public static final int action_mode_bar=0x7f09002e;
         public static final int action_mode_bar_stub=0x7f09002d;
         public static final int action_mode_close_button=0x7f090020;
-        public static final int action_settings=0x7f090040;
+        public static final int action_settings=0x7f090042;
         public static final int activity_chooser_view_content=0x7f090021;
         public static final int always=0x7f090016;
         public static final int beginning=0x7f090013;
+        public static final int btn_eat=0x7f090041;
         public static final int checkbox=0x7f090029;
         public static final int collapseActionView=0x7f090017;
         public static final int cookie_img=0x7f09003f;
@@ -1377,6 +1378,7 @@ containing a value of this type.
         public static final int title=0x7f090027;
         public static final int up=0x7f090008;
         public static final int useLogo=0x7f090012;
+        public static final int user_msg=0x7f090040;
         public static final int withText=0x7f09001a;
         public static final int wrap_content=0x7f09001d;
     }
