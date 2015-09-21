@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.CheckBox;
 import android.widget.TextView;
 
 import org.w3c.dom.Text;
@@ -18,6 +19,7 @@ public class MainActivity extends ActionBarActivity {
     private static String TOTAL = "Total";
     private static double PRICE_PER_COFFEE = 20.0;
     private String name = "Mani Bhushan";
+    private String topping = "No";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -41,9 +43,20 @@ public class MainActivity extends ActionBarActivity {
         double price = QTY * PRICE_PER_COFFEE;
         return price;
     }
+
     private String createOrderSummary() {
         StringBuffer sb = new StringBuffer();
+        CheckBox checkBox = (CheckBox) findViewById(R.id.topping_checkbox);
+        boolean flag = checkBox.isChecked();
+
+        if (flag) {
+            topping = "Yes";
+        } else {
+            topping = "No";
+        }
+
         sb.append("Name: " + name);
+        sb.append("\nAdd whipped cream: " + topping);
         sb.append("\nQuantity: " + QTY);
         double totalPrice = calculatePrice();
 
