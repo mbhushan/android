@@ -1,24 +1,34 @@
 package com.manib.testapp;
 
+import android.media.Image;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 
 public class MainActivity extends ActionBarActivity {
 
     private String message = "I'm so full";
+    private String drawableName = "after_cookie";
 
 
     public void eatCookie(View view) {
+        int resId = getResources().getIdentifier(drawableName, "drawable", getPackageName());
+
+        ImageView imgView = (ImageView) findViewById(R.id.cookie_img);
         TextView usermsg = (TextView) findViewById(R.id.user_msg);
         Button btn = (Button) findViewById(R.id.btn_eat);
+
         usermsg.setText(message);
-        btn.setClickable(false);
+        imgView.setImageResource(resId);
+        //btn.setClickable(false);
+        //ImageView imageView = (ImageView) findViewById(R.id.android_cookie_image_view);
+        //imageView.setImageResource(R.drawable.after_cookie);
     }
 
     @Override
