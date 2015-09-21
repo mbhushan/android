@@ -31,6 +31,15 @@
             android:text="Whipped cream"
             android:textSize="16sp" />
 
+        <CheckBox
+            android:id="@+id/topping_chocolate_checkbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:text="Chocolate"
+            android:textSize="16sp" />
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"

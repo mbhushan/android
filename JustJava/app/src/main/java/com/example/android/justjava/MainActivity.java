@@ -19,7 +19,8 @@ public class MainActivity extends ActionBarActivity {
     private static String TOTAL = "Total";
     private static double PRICE_PER_COFFEE = 20.0;
     private String name = "Mani Bhushan";
-    private String topping = "No";
+    private String toppingWhippedCream = "No";
+    private String toppingChocolate = "No";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -47,16 +48,26 @@ public class MainActivity extends ActionBarActivity {
     private String createOrderSummary() {
         StringBuffer sb = new StringBuffer();
         CheckBox checkBox = (CheckBox) findViewById(R.id.topping_checkbox);
-        boolean flag = checkBox.isChecked();
+        boolean flagWhippedCream = checkBox.isChecked();
 
-        if (flag) {
-            topping = "Yes";
+        checkBox = (CheckBox) findViewById(R.id.topping_chocolate_checkbox);
+        boolean flagChocolate = checkBox.isChecked();
+
+        if (flagWhippedCream) {
+            toppingWhippedCream = "Yes";
         } else {
-            topping = "No";
+            toppingWhippedCream = "No";
+        }
+
+        if (flagChocolate) {
+            toppingChocolate = "Yes";
+        } else {
+            toppingChocolate = "No";
         }
 
         sb.append("Name: " + name);
-        sb.append("\nAdd whipped cream: " + topping);
+        sb.append("\nAdd whipped cream: " + toppingWhippedCream);
+        sb.append("\nAdd chocolate: " + toppingChocolate);
         sb.append("\nQuantity: " + QTY);
         double totalPrice = calculatePrice();
 
