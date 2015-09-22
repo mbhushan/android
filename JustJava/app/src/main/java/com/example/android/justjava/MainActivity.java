@@ -8,6 +8,7 @@ import android.view.View;
 import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import org.w3c.dom.Text;
 
@@ -36,6 +37,12 @@ public class MainActivity extends ActionBarActivity {
     public void increment(View view) {
         if (QTY < MAX_COFFEE) {
             QTY += 1;
+        } else {
+            Toast toast = Toast.makeText(getApplicationContext(),
+                    "You cannot have more than " + MAX_COFFEE + " coffees.",
+                    Toast.LENGTH_SHORT);
+
+            toast.show();
         }
         displayQuantity();
     }
@@ -43,6 +50,12 @@ public class MainActivity extends ActionBarActivity {
     public void decrement(View view) {
         if (QTY > MIN_COFFEE) {
             QTY -= 1;
+        } else {
+            Toast toast = Toast.makeText(getApplicationContext(),
+                    "Minimum coffee order is  " + MIN_COFFEE,
+                    Toast.LENGTH_SHORT);
+
+            toast.show();
         }
         displayQuantity();
     }
