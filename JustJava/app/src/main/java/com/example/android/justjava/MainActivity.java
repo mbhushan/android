@@ -1,5 +1,7 @@
 package com.example.android.justjava;
 
+import android.content.Intent;
+import android.net.Uri;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
@@ -27,6 +29,7 @@ public class MainActivity extends ActionBarActivity {
     private double chocolatePrice = 2.0;
     private static int MAX_COFFEE = 5;
     private static int MIN_COFFEE = 1;
+    private String toEmailAddress = "nobody@gmail.com";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -65,6 +68,19 @@ public class MainActivity extends ActionBarActivity {
         return price;
     }
 
+    private void sendOrderSummaryEmail(String orderSummary) {
+        Intent intent = new Intent(Intent.ACTION_SEND);
+        intent.setType("message/rfc822");
+        //intent.setData(Uri.parse("mailto:")); // only email apps should handle this
+        intent.putExtra(Intent.EXTRA_EMAIL, "manibhushan.cs@gmail.com");
+        intent.putExtra(Intent.EXTRA_SUBJECT, "Just Java Order for " + name);
+        intent.putExtra(Intent.EXTRA_TEXT, orderSummary);
+
+        if (intent.resolveActivity(getPackageManager()) != null) {
+            startActivity(Intent.createChooser(intent, "Send Email"));
+        }
+    }
+
     private String createOrderSummary() {
         double coffeePrice = PRICE_PER_COFFEE;
 
@@ -72,6 +88,9 @@ public class MainActivity extends ActionBarActivity {
 
         EditText editText = (EditText) findViewById(R.id.name_input);
         name = editText.getText().toString();
+
+        editText = (EditText) findViewById(R.id.name_input);
+        toEmailAddress = editText.getText().toString();
 
         CheckBox checkBox = (CheckBox) findViewById(R.id.topping_checkbox);
         boolean flagWhippedCream = checkBox.isChecked();
@@ -113,6 +132,7 @@ public class MainActivity extends ActionBarActivity {
     public void submitOrder(View view) {
         String orderSummary = createOrderSummary();
         displayOrderSummary(orderSummary);
+        sendOrderSummaryEmail(orderSummary);
     }
 
     /**
