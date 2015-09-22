@@ -22,6 +22,8 @@ public class MainActivity extends ActionBarActivity {
     private String name = "Mani Bhushan";
     private String toppingWhippedCream = "No";
     private String toppingChocolate = "No";
+    private double whippedCreamPrice = 1.0;
+    private double chocolatePrice = 2.0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -41,12 +43,14 @@ public class MainActivity extends ActionBarActivity {
         displayQuantity();
     }
 
-    private double calculatePrice() {
-        double price = QTY * PRICE_PER_COFFEE;
+    private double calculatePrice(double coffeePrice) {
+        double price = QTY * coffeePrice;
         return price;
     }
 
     private String createOrderSummary() {
+        double coffeePrice = PRICE_PER_COFFEE;
+
         StringBuffer sb = new StringBuffer();
 
         EditText editText = (EditText) findViewById(R.id.name_input);
@@ -60,12 +64,14 @@ public class MainActivity extends ActionBarActivity {
 
         if (flagWhippedCream) {
             toppingWhippedCream = "Yes";
+            coffeePrice += whippedCreamPrice;
         } else {
             toppingWhippedCream = "No";
         }
 
         if (flagChocolate) {
             toppingChocolate = "Yes";
+            coffeePrice += chocolatePrice;
         } else {
             toppingChocolate = "No";
         }
@@ -74,7 +80,7 @@ public class MainActivity extends ActionBarActivity {
         sb.append("\nAdd whipped cream: " + toppingWhippedCream);
         sb.append("\nAdd chocolate: " + toppingChocolate);
         sb.append("\nQuantity: " + QTY);
-        double totalPrice = calculatePrice();
+        double totalPrice = calculatePrice(coffeePrice);
 
         sb.append("\nTotal: " + NumberFormat.getCurrencyInstance().format(totalPrice));
         sb.append("\nThank You!");
