@@ -16,14 +16,16 @@ import java.text.NumberFormat;
 
 public class MainActivity extends ActionBarActivity {
 
-    private static int QTY = 0;
+    private static int QTY = 1;
     private static String TOTAL = "Total";
-    private static double PRICE_PER_COFFEE = 20.0;
+    private static double PRICE_PER_COFFEE = 5.0;
     private String name = "Mani Bhushan";
     private String toppingWhippedCream = "No";
     private String toppingChocolate = "No";
     private double whippedCreamPrice = 1.0;
     private double chocolatePrice = 2.0;
+    private static int MAX_COFFEE = 5;
+    private static int MIN_COFFEE = 1;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -32,12 +34,14 @@ public class MainActivity extends ActionBarActivity {
     }
 
     public void increment(View view) {
-        QTY += 1;
+        if (QTY < MAX_COFFEE) {
+            QTY += 1;
+        }
         displayQuantity();
     }
 
     public void decrement(View view) {
-        if (QTY > 0) {
+        if (QTY > MIN_COFFEE) {
             QTY -= 1;
         }
         displayQuantity();
