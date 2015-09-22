@@ -6,6 +6,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.CheckBox;
+import android.widget.EditText;
 import android.widget.TextView;
 
 import org.w3c.dom.Text;
@@ -47,6 +48,10 @@ public class MainActivity extends ActionBarActivity {
 
     private String createOrderSummary() {
         StringBuffer sb = new StringBuffer();
+
+        EditText editText = (EditText) findViewById(R.id.name_input);
+        name = editText.getText().toString();
+
         CheckBox checkBox = (CheckBox) findViewById(R.id.topping_checkbox);
         boolean flagWhippedCream = checkBox.isChecked();
 
