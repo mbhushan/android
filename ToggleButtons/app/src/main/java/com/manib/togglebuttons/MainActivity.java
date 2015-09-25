@@ -4,6 +4,10 @@ import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.Button;
+import android.widget.Toast;
+import android.widget.ToggleButton;
 
 
 public class MainActivity extends ActionBarActivity {
@@ -12,6 +16,19 @@ public class MainActivity extends ActionBarActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+    }
+
+    public void displayStates(View view) {
+        ToggleButton btn1View = (ToggleButton) findViewById(R.id.toggle_btn_1);
+        ToggleButton btn2View = (ToggleButton) findViewById(R.id.toggle_btn_2);
+        Button btnView = (Button) findViewById(R.id.display_btn);
+
+        StringBuffer sb = new StringBuffer();
+        sb.append("Toggle Button One: " + btn1View.getText().toString());
+        sb.append("\nToggle Button Two: " + btn2View.getText().toString());
+
+        Toast toast = Toast.makeText(getApplicationContext(), sb.toString(), Toast.LENGTH_SHORT);
+        toast.show();
     }
 
 

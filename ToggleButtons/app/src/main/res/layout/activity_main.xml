@@ -10,22 +10,23 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_margin="16dp"
-        android:text="hungry"/>
+        android:text="hungry" />
 
     <ToggleButton
         android:id="@+id/toggle_btn_2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textOn="@string/toggle_on"
-        android:textOff="@string/toggle_off"
         android:layout_margin="16dp"
-        android:checked="true"/>
+        android:checked="true"
+        android:textOff="@string/toggle_off"
+        android:textOn="@string/toggle_on" />
 
     <Button
         android:id="@+id/display_btn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_margin="16dp"
-        android:text="@string/btn_display"/>
+        android:text="@string/btn_display"
+        android:onClick="displayStates"/>
 
 </LinearLayout>
