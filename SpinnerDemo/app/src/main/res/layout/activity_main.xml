@@ -1,0 +1,33 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/spinner_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Android Spinner Example"
+        android:layout_gravity="center"
+        android:padding="16dp"
+        android:textSize="25sp"/>
+
+    <TextView
+        android:id="@+id/spinner_direction"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Select a Celebrity"
+        android:textSize="20sp"
+        android:padding="16dp"/>
+
+    <Spinner
+        android:id="@+id/spinner_items"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
+        </Spinner>
+
+</LinearLayout>
