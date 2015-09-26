@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="/Users/manib/Library/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/22.0.0/support-annotations-22.0.0.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="685d0b2c590447e85284ed84712cb363ba04eff8">
+        <dex dex="/Users/manib/Documents/development/android/Sorting/app/build/intermediates/pre-dexed/debug/support-annotations-22.0.0-ac618a178f067160e07b03c4b241ed4756165638.jar" />
+    </item>
+    <item
+        jar="/Users/manib/Documents/development/android/Sorting/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.0.0/classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="d84409890828e07d344a3b9b1da545dba9897b51">
+        <dex dex="/Users/manib/Documents/development/android/Sorting/app/build/intermediates/pre-dexed/debug/classes-7337219c060c291aa082f744ab2f70e8580e10d5.jar" />
+    </item>
+    <item
+        jar="/Users/manib/Documents/development/android/Sorting/app/build/intermediates/exploded-aar/com.android.support/support-v4/22.0.0/libs/internal_impl-22.0.0.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="b5b92f469d515a13d778900f6d50c03d12f35504">
+        <dex dex="/Users/manib/Documents/development/android/Sorting/app/build/intermediates/pre-dexed/debug/internal_impl-22.0.0-dc24405c0d2a25571325ecf3ffda80b1a049a81a.jar" />
+    </item>
+    <item
+        jar="/Users/manib/Documents/development/android/Sorting/app/build/intermediates/exploded-aar/com.android.support/support-v4/22.0.0/classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="4e86306289ace4aa0cfec44a05ed2b410d36989d">
+        <dex dex="/Users/manib/Documents/development/android/Sorting/app/build/intermediates/pre-dexed/debug/classes-bb8e6df6312eefb98ca0bd343782e03345b9d6a2.jar" />
+    </item>
+
+</items>
