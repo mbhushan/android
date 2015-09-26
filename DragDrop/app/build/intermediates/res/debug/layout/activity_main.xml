@@ -1,0 +1,32 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/centerID"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/pinkLayout"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:background="#FF8989"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/dragTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Please Drag Me!!" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/yellowLayout"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_marginTop="250dp"
+        android:background="#FFCC00"
+        android:orientation="vertical" >
+    </LinearLayout>
+
+</RelativeLayout>
+<!-- From: file:/Users/manib/Documents/development/android/DragDrop/app/src/main/res/layout/activity_main.xml -->
