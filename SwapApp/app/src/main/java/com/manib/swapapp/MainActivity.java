@@ -2,6 +2,7 @@ package com.manib.swapapp;
 
 import java.util.Locale;
 
+import android.support.design.widget.TabLayout;
 import android.support.v7.app.ActionBarActivity;
 import android.support.v7.app.ActionBar;
 import android.support.v4.app.Fragment;
@@ -50,6 +51,10 @@ public class MainActivity extends ActionBarActivity {
         mViewPager = (ViewPager) findViewById(R.id.pager);
         mViewPager.setAdapter(mSectionsPagerAdapter);
 
+        //Add a tab bar navigation
+        TabLayout tabLayout = (TabLayout) findViewById(R.id.tabbar);
+        tabLayout.setupWithViewPager(mViewPager);
+
     }
 
 
@@ -90,6 +95,15 @@ public class MainActivity extends ActionBarActivity {
         public Fragment getItem(int position) {
             // getItem is called to instantiate the fragment for the given page.
             // Return a PlaceholderFragment (defined as a static inner class below).
+            switch (position) {
+                case 0:
+                    return PlaceholderFragment.newInstance(position + 1);
+                case 1:
+                    return Tab2.newInstance(position + 1);
+                case 2:
+                    return Tab3.newInstance(position + 1);
+
+            }
             return PlaceholderFragment.newInstance(position + 1);
         }
 
@@ -102,6 +116,7 @@ public class MainActivity extends ActionBarActivity {
         @Override
         public CharSequence getPageTitle(int position) {
             Locale l = Locale.getDefault();
+
             switch (position) {
                 case 0:
                     return getString(R.string.title_section1).toUpperCase(l);
