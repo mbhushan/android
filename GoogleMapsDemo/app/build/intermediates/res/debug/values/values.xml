@@ -280,7 +280,7 @@ available. Please contact the developer for assistance.</string>
     <!-- From: file:/Users/manib/Documents/development/android/GoogleMapsDemo/app/src/debug/res/values/google_maps_api.xml -->
     <eat-comment/>
     <string name="google_maps_key" templateMergeStrategy="preserve" translatable="false">
-        YOUR_KEY_HERE
+        AIzaSyCEr3eVzbC-RfrjUjXvlLBMYXQcIRspYv0
     </string>
     <!-- From: file:/Users/manib/Documents/development/android/GoogleMapsDemo/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.1/res/values/values.xml -->
     <eat-comment/>
