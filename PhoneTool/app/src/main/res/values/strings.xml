@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Phone Tool</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_engineering">Engineering</string>
+    <string name="title_activity_business">Business</string>
+    <string name="title_activity_founders">Founders</string>
+    <string name="title_activity_pm">PM</string>
+    <string name="title_activity_hr">HR</string>
+</resources>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/topText"
+        style="@android:style/TextAppearance.Medium"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:text="Top Text" />
+    <ImageView
+        android:id="@+id/imageHR"
+        android:layout_width="match_parent"
+        android:background="@drawable/aditya"
+        android:layout_height="200dp"
+        android:layout_below="@+id/topText"/>
+
+    <Button
+        android:id="@+id/btn_contact"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:layout_gravity="center"
+        android:onClick="9739099370"
+        android:padding="16dp"
+        android:layout_alignParentBottom="true"
+        android:text="contact" />
+</RelativeLayout>

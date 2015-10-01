@@ -1,0 +1,64 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bkgrnd"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Swiggy Departments"
+        android:padding="16dp"
+        android:layout_margin="16dp"
+        android:background="#FFCC80"
+        android:textAllCaps="true" />
+
+    <Button
+        android:id="@+id/btn_engg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:layout_margin="16dp"
+        android:onClick="showEngineering"
+        android:text="Engineering Team" />
+
+    <Button
+        android:id="@+id/btn_pm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:layout_margin="16dp"
+        android:onClick="showPM"
+        android:text="Product Management" />
+
+    <Button
+        android:id="@+id/btn_business"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:layout_margin="16dp"
+        android:onClick="showBusiness"
+        android:text="Business" />
+
+    <Button
+        android:id="@+id/btn_hr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:layout_margin="16dp"
+        android:onClick="showHR"
+        android:text="Human Resource" />
+
+    <Button
+        android:id="@+id/btn_founders"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:layout_margin="16dp"
+        android:onClick="showFounders"
+        android:text="Founders" />
+
+</LinearLayout><!-- From: file:/Users/manib/Documents/development/android/PhoneTool/app/src/main/res/layout/activity_main.xml -->
