@@ -7,13 +7,16 @@
         style="@android:style/TextAppearance.Medium"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
+
+        android:layout_margin="32dp"
         android:gravity="center"
-        android:text="Top Text" />
+        android:text="Top Text"
+        android:textStyle="bold"
+        android:textSize="25sp"/>
+
     <ImageView
         android:id="@+id/imageHR"
         android:layout_width="match_parent"
-        android:background="@drawable/aditya"
         android:layout_height="200dp"
         android:layout_below="@+id/topText"/>
 
@@ -24,7 +27,10 @@
         android:layout_marginBottom="16dp"
         android:layout_gravity="center"
         android:onClick="9739099370"
-        android:padding="16dp"
+        android:padding="8dp"
+        android:textSize="22sp"
+        android:background="#DCE775"
         android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
         android:text="contact" />
 </RelativeLayout>
