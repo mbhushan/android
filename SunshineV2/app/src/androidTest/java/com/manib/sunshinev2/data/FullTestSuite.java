@@ -1,4 +1,4 @@
-package com.manib.sunshinev2;
+package com.manib.sunshinev2.data;
 
 import android.test.suitebuilder.TestSuiteBuilder;
 

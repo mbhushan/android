@@ -23,8 +23,6 @@ public class WeatherContract {
 
     /*
         Inner class that defines the table contents of the location table
-        Students: This is where you will add the strings.  (Similar to what has been
-        done for WeatherEntry)
      */
     public static final class LocationEntry implements BaseColumns {
 
