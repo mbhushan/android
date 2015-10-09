@@ -1,0 +1,11 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.manib.sunshinev2.DetailActivity">
+    <item
+        android:title="@string/action_settings"
+        android:id="@+id/action_settings"
+        android:orderInCategory="100"
+        app:showAsAction="never" />
+</menu>
+<!-- From: file:/Users/manib/Documents/development/android/SunshineV2/app/src/main/res/menu/detail.xml -->
