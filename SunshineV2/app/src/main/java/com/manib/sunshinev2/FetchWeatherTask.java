@@ -23,6 +23,7 @@ import java.net.URL;
 import java.text.SimpleDateFormat;
 import java.util.Vector;
 
+import com.manib.sunshinev2.data.WeatherContract.WeatherEntry;
 /**
  * Created by manib on 14/10/15.
  */
