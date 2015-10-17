@@ -53,9 +53,6 @@ public class FetchWeatherTask extends AsyncTask<String, Void, String[]> {
         return format.format(date).toString();
     }
 
-    /**
-     * Prepare the weather high/lows for presentation.
-     */
     private String formatHighLows(double high, double low) {
         // Data is fetched in Celsius by default.
         // If user prefers to see in Fahrenheit, convert the values here.
