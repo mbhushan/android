@@ -72,7 +72,7 @@ public class FetchWeatherTask extends AsyncTask<String, Void, String[]> {
             Log.d(LOG_TAG, "Unit type not found: " + unitType);
         }
 
-        // For presentation, assume the user doesn't care about tenths of a degree.
+        
         long roundedHigh = Math.round(high);
         long roundedLow = Math.round(low);
 
