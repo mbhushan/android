@@ -102,7 +102,6 @@ public class FetchWeatherTask extends AsyncTask<String, Void, String[]> {
         the database.
      */
     String[] convertContentValuesToUXFormat(Vector<ContentValues> cvv) {
-        // return strings to keep UI functional for now
         String[] resultStrs = new String[cvv.size()];
         for ( int i = 0; i < cvv.size(); i++ ) {
             ContentValues weatherValues = cvv.elementAt(i);
